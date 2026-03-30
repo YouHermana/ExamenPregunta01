@@ -27,11 +27,6 @@ public class TestPregunta01 {
             return "Ingrese un código de producto válido";
         }
 
-        // Validar nombre del cliente
-        if (!nombreCliente.matches("[A-Za-z]{4,}")) {
-            return "El nombre del cliente debe tener al menos cuatro caracteres alfabéticos";
-        }
-
         // Validar motivo
         if (motivo.length() < 10) {
             return "El motivo de la devolución debe tener al menos diez caracteres";
