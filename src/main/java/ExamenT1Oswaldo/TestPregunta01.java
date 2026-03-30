@@ -8,13 +8,6 @@ public class TestPregunta01 {
                                       String nombreCliente, String motivo,
                                       LocalDate fechaCompra, LocalDate fechaDev) {
 
-        // Validar campos vacíos
-        if (codigoDev == null || codigoProd == null || nombreCliente == null
-                || motivo == null || fechaCompra == null || fechaDev == null
-                || codigoDev.isEmpty() || codigoProd.isEmpty()
-                || nombreCliente.isEmpty() || motivo.isEmpty()) {
-            return "Debe ingresar todos los datos requeridos";
-        }
 
         // Validar código de devolución
         if (!codigoDev.matches("D\\d{4}")) {
