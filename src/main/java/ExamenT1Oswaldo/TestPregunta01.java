@@ -32,11 +32,11 @@ public class TestPregunta01 {
             return "El nombre del cliente debe tener al menos cuatro caracteres alfabéticos";
         }
 
-
-        // Validar fechas
-        if (fechaDev.isBefore(fechaCompra) || fechaDev.isAfter(LocalDate.now())) {
-            return "Ingrese una fecha de devolución válida";
+        // Validar motivo
+        if (motivo.length() < 10) {
+            return "El motivo de la devolución debe tener al menos diez caracteres";
         }
+
 
         // Todo correcto
         return "La devolución ha sido registrada correctamente";
