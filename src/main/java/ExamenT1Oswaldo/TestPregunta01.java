@@ -17,7 +17,10 @@ public class TestPregunta01 {
             return "Debe ingresar todos los datos requeridos";
         }
 
-
+        // Validar código de devolución
+        if (!codigoDev.matches("D\\d{4}")) {
+            return "Ingrese un código de devolución válido";
+        }
 
         // Validar código de producto
         if (!codigoProd.matches("[A-Za-z0-9]{6}")) {
